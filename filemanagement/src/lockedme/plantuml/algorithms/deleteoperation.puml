@@ -1,0 +1,11 @@
+@startuml
+
+:Take the file path as input;
+:Delete the file from the input path;
+if (fileToBeDeleted.delete()) then (yes)
+  :Print "File deleted " + fileToBeDeleted.getName();
+else (no)
+  :Print "File not found.";
+endif
+
+@enduml

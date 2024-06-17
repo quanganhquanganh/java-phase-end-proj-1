@@ -1,0 +1,11 @@
+@startuml
+
+:Take the file path as input;
+:Create a new file with the given path;
+if (File already exists) then (yes)
+  :Print "File already exists.";
+else (no)
+  :Print "File created"
+  :Print the name of the file;
+endif
+@enduml

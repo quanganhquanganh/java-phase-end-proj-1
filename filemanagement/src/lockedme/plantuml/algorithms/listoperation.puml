@@ -1,0 +1,10 @@
+@startuml
+
+:Take directory as the parameter;
+:List files in the directory;
+:Sort files by name in ascending order;
+repeat :Print file name;
+repeat while (All files are listed);
+:Print total files and folders;
+
+@enduml

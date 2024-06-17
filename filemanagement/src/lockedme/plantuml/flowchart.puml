@@ -1,0 +1,30 @@
+@startuml
+
+start
+
+:Welcome Screen with information;
+:List of available commands;
+
+repeat :User input;
+if (Command is add) then (yes)
+    :Create a new file with the given path;
+else if (Command is list) then (yes)
+    :List all files and directories in the given path;
+else if (Command is delete) then (yes)
+    :Delete the file with the given path;
+else if (Command is search) then (yes)
+    :Search for the file with the given name in the given path;
+else if (Command is clear) then (yes)
+    :Clear the screen;
+else if (Command is help) then (yes)
+    :Show the list of available commands;
+else if (Command is exit) then (yes)
+    -> :Exit the program;
+    stop
+else
+    #pink:Show an error message;
+    :Show the list of available commands;
+endif
+repeat while (true)
+
+@enduml

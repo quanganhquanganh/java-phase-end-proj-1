@@ -1,0 +1,36 @@
+@startuml
+
+' Start of the diagram
+title LockedMe Class Diagram
+
+' Define the classes
+class AddOperation {
+    -file: String
+    +run()
+}
+
+class DeleteOperation {
+    -file: String
+    +run()
+}
+
+class ListOperation {
+    -directory: String
+    +run()
+}
+
+class SearchOperation {
+    -file: String
+    -directory: String
+    +run()
+}
+
+class LockedMe {
+    -out: PrintWriter
+    +setReader(LineReader)
+    +run()
+}
+
+class CliCommands
+
+@enduml

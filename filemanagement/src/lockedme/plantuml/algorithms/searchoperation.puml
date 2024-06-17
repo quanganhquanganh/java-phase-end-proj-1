@@ -1,0 +1,17 @@
+@startuml
+
+:Take in the first parameter as the file to search;
+if (Second parameter is provided) then (Yes)
+  :Take in the second parameter as the directory to search in;
+else (No)
+  :Use the current directory as the default directory;
+endif
+:Set an array to store the files in the directory;
+:Iterate through the files in the directory;
+if (File is found) then (Yes)
+  :Print the path of the file;
+else (No)
+  :Print that the file was not found;
+endif
+
+@enduml
