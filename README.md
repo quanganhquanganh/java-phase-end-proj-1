@@ -1,5 +1,5 @@
 # LockedMe
-LockedMe is a command-line application that allows you to manage files in a directory. It provides a set of commands to create, delete, list, and search for files.
+LockedMe is a command-line application that allows you to manage files in all directories. It provides a set of commands to create, delete, list, and search for files.
 
 ## Features
 Create a new file in a specified directory.
